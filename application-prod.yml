@@ -1,1 +1,13 @@
-
+server:
+  port: 8085
+  
+spring:
+  application:
+   name: CONFIGURATION-SERVER
+   
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chiragkakadiya26/Microservice-Configuration
+          clone-on-start: true
